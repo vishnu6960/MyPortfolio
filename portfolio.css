@@ -1,0 +1,159 @@
+.collapse{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row-reverse;
+}
+.navbar-nav{
+    /* border: 1px solid black; */
+    display: flex;
+    width: 80%;
+    margin-right: 5%;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.container-fluid > span{
+    /* border: 1px solid black; */
+    /* position: fixed; */
+    margin-left: 10%;
+    /* margin-top: 3%; */
+}
+.main{
+    /* border: 1px solid black; */
+    margin-top: 5%;
+    /* height: 600px; */
+}
+#About{
+    /* border: 1px solid black; */
+    /* width: 100%; */
+    height: 60%;
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+}
+#About > div{
+    /* border: 1px solid black; */
+    word-wrap: break-word;
+    /* text-align: center; */
+    /* height: 30%; */
+    /* width: 100%; */
+}
+.about-text > div > h1{
+    font-size: 90px;
+    font-style: italic;
+}
+.about-text > div > h4{
+    /* font-size: 90px; */
+    font-style: italic;
+}
+.profile{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+    /* align-items: end; */
+}
+.profile > div{
+    /* border: 1px solid black; */
+    height: 350px;
+    /* wi */
+    border-radius: 50%;
+}
+.profile > div > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+@media (max-width:576px) {
+    .profile > div > img{
+        height: 90%;
+        width: 100%;
+        /* border-radius: 50%; */
+    }
+}
+
+.resume-header, .project-header{
+    height: 100px;
+}
+.pdf{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 30px;
+    /* width: 100px; */
+    /* align-items: center; */
+}
+.pdf > button{
+    width: 100px;
+    color:white;
+    background-color: blue;
+}
+.work-div{
+    /* border: 1px solid black; */
+    width: 100%;
+    /* height: 600px; */
+}
+.work-div > div{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 100%; */
+}
+/* .work-names > div{ */
+    /* border: 1px solid black; */
+    /* height: 100px; */
+/* } */
+.work-year{
+    /* border: ; */
+    height: auto;
+    height: max-content;
+}
+hr{
+    height: 10px;
+}
+.education-div{
+    display: flex;
+    justify-content: end;
+    /* flex-direction:row-reverse ; */
+}
+.education-div > div{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-name > button{
+    margin-left: 25%;
+}
+.project-demo{
+    /* border: 1px solid black; */
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+.gif > img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer{
+    /* border: 1px solid black; */
+    width: 100%;
+    /* position: fixed; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer > div{
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.icons{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+#Resume, #Projects{
+    display: none;
+}
+

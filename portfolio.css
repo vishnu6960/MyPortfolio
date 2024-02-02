@@ -6,8 +6,8 @@
 .navbar-nav{
     /* border: 1px solid black; */
     display: flex;
-    width: 80%;
-    margin-right: 5%;
+    width: 100%;
+    /* margin-right: 5%; */
     justify-content: space-around;
     font-size: 20px;
 }
@@ -70,11 +70,37 @@
         /* border-radius: 50%; */
     }
 }
+.portfolios-div{
+    /* border: 1px solid black; */
+    /* height: 500px; */
+    display: flex;
+    justify-content: center;
+}
+.github-div, .hackerrank-div{
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.github-pic, .hackerrank-pic{
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    height: 300px;
+}
+.github-pic > img, .hackerrank-pic > img{
+    height: 100%;
+    width: 100%;
+}
+@media (max-width:440px){
+    .github-pic, .hackerrank-pic{
+        /* border: 1px solid black; */
+        height: 200px;
+    }
+}
 
 .resume-header, .project-header{
     height: 100px;
 }
 .pdf{
+    margin-top: 2%;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -82,7 +108,7 @@
     /* width: 100px; */
     /* align-items: center; */
 }
-.pdf > button{
+.pdf > a > button{
     width: 100px;
     color:white;
     background-color: blue;
@@ -120,7 +146,7 @@ hr{
     display: flex;
     flex-wrap: wrap;
 }
-.project-name > button{
+.project-name > a{
     margin-left: 25%;
 }
 .project-demo{
@@ -141,19 +167,39 @@ hr{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: rgb(225, 225, 218);
 }
 .footer > div{
     /* border: 1px solid black; */
     text-align: center;
 }
 .icons{
+    /* width: 200px; */
     font-size: 30px;
     display: flex;
     justify-content: center;
     justify-content: space-around;
 }
+.icons > a {
+    color: black;
+}
 
 #Resume, #Projects{
     display: none;
 }
+button{
+    border: 0;
+    border-radius: 5px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-style: italic;
+}
+nav{
+    background-color: rgb(225, 225, 218);
+}
+body{
+    background-color: rgb(246, 246, 239);
+    font-family: Madefor,Helvetica Neue,Helvetica,Arial,メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
+}
+
 

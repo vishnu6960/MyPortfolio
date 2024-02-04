@@ -186,7 +186,10 @@ hr{
 }
 button{
     border: 0;
-    border-radius: 5px;
+    border-radius: 0.25rem;
+    color: white;
+    background-color: #007bff;
+    border-color: #007bff;
 }
 h1, h2, h3, h4, h5, h6{
     font-style: italic;

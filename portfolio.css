@@ -161,7 +161,6 @@ hr{
 }
 
 .footer{
-    /* border: 1px solid black; */
     width: 100%;
     /* position: fixed; */
     display: flex;
@@ -182,7 +181,7 @@ hr{
     color: black;
 }
 
-#Resume, #Projects{
+#Resume{
     display: none;
 }
 button{

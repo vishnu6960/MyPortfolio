@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="portfolio.css">
     
     <script src="https://kit.fontawesome.com/accd26a21f.js" crossorigin="anonymous"></script>
@@ -17,23 +20,27 @@
 </head>
 <body>
   <!-- <button onclick="Resume()">click here</button> -->
-    <nav class="navbar sticky-top navbar-expand-lg">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><h5>VISHNUVARDHAN</h5></a>
-          <span type="text" href="">Web Developer</span>
+          <div class="name_Div">
+            <a class="navbar-brand" href="index.html"><h3 style="color: white;">Vishnuvardhan</h3></a>
+            <p id="pTag">Web Developer</p>
+          </div>
+          
+          <!-- <span type="text" href="">Web Developer</span> -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav" id="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">ABOUT</a>
+                <a class="nav-link active" aria-current="page" href="#About">ABOUT</a>
               </li>
               <li class="nav-item">
                <a class="nav-link" type="button" href="#Resume">RESUME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" type="button" href="#Projects">PROJECTS</a>
+                <a class="nav-link" type="button" onclick="Projects()" href="#Projects">PROJECTS</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -66,7 +73,7 @@
             </div>
             <div>
               <p>I'm Vishnuvardhan, currently Engineering student at the Department of Information Technology, SVCE, Tirupati</p>
-              <h5>Web Developer</h5>
+              <!-- <h5>Web Developer</h5> -->
             </div>
             <div><hr></div>
             <div>
@@ -78,11 +85,9 @@
                  I demonstrate a commitment to high-quality development through my GitHub repositories, showcasing a strong dedication to crafting well-structured and efficient code.</p>
             </div>
           </div>
-          
           <div id="Projects"><hr></div>
-
         </div>
-        <div class="row project">
+        <div class="row project" id="Projects">
           <div class="row project-header">
             <div class="col-12">
               <h1>Projects</h1>
@@ -94,12 +99,13 @@
               
               <p>This Website provides the movie posters and the information about the movie that we search for and also provide similar movie posters according to the name we search "With Responsiveness"</p>
                 <p>Tools used: JavaScript, Html, Css, Bootstrap, Rest_Api</p>
-                <a href="https://vishnu6960.github.io/Get_Movie-details/"><button>click here to view</button></a>
+                
             </div>
             <div class="project-demo col-12 col-md-6 col-lg-4">
               <div class="gif col-12">
                 <img src="C:\Users\DELL\coding\mycodes\Myportfolio\movie_api2.gif" alt="">
               </div>
+              <div id="view"><a href="https://vishnu6960.github.io/Get_Movie-details/"><button>click here to view</button></a></div>
             </div>
           </div>
           <div><hr></div>
@@ -108,14 +114,15 @@
             <div class="project-name col-12 col-md-6 col-lg-8">
               <h3>Typing_Test</h3>
               
-              <p>This Website provides the typing capacity of a person it can be modified with time for 1 min and it has easy level for beginners and also provide the net speed, accuracy, incorrect letters count..</p>
+              <p>This Website provides the typing capacity of a person for 1 min, it has easy level for beginners and also provide the net speed, accuracy, incorrect letters count..(for desktops)</p>
                 <p>Tools used : JavaScript, Html, Css</p>
-                <a href="https://vishnu6960.github.io/Typing-test/"><button>click here to view</button></a>
+                
             </div>
             <div class="project-demo col-12 col-md-6 col-lg-4">
               <div class="gif col-12">
                 <img src="C:\Users\DELL\coding\mycodes\Myportfolio\typingTest.gif" alt="">
               </div>
+              <div id="view"><a href="https://vishnu6960.github.io/Typing-test/"><button>click here to view</button></a></div>
             </div>
           </div>
           <div><hr></div>
@@ -126,11 +133,14 @@
               
               <p>This webpage converts the one currency value to another currency value by using Api call.</p>
               <p>Tools used : JavaScript, Html, Css, Rest_Api</p>
-                <a href="https://vishnu6960.github.io/Currency_converter/"><button>click here to view</button></a>
+                
             </div>
             <div class="project-demo col-12 col-md-6 col-lg-4">
               <div class="gif col-12">
                 <img src="C:\Users\DELL\coding\mycodes\Myportfolio\currencyConverter.gif" alt="">
+              </div>
+              <div id="view">
+                <a href="https://vishnu6960.github.io/Currency_converter/"><button>click here to view</button></a>
               </div>
             </div>
           </div>
@@ -141,11 +151,14 @@
               <h3>Food_Order_Page(static)</h3>
               <p>This website is only a static food order webpage for view.</p>
               <p>Tools used : ReactJs, Html, Css, JavaScript, Bootstrap</p>
-                <a href="#"><button>click here to view</button></a>
+                
             </div>
             <div class="project-demo col-12 col-md-6 col-lg-4">
               <div class="gif col-12">
                 <img src="C:\Users\DELL\coding\mycodes\Myportfolio\React1.gif" alt="">
+              </div>
+              <div id="view">
+                <!-- <a href="#"><button>click here to view</button></a> -->
               </div>
             </div>
           </div>
@@ -171,7 +184,7 @@
 
                 </div>
                 <div class="work-title col-12 col-md-8">
-                  <h6>WebDevelopment Trainee</h6>
+                  <h6>Web Development Trainee</h6>
                   <p></p>
                 </div>
               </div>
@@ -222,14 +235,28 @@
               <div class="skills-names col-12 col-md-8 col-lg-7">
                 <div class="skills-title col-12 col-md-8">
                   <ul>
-                    <li>REACT JS</li>
-                    <li>NODE.JS</li>
-                    <li>JAVASCRIPT</li>
-                    <li>MongoDB</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>C PROGRAMMING</li>
-                    <li>SQL</li>
+                    <i class="fa-brands fa-react"></i> React.Js 
+                  </ul>
+                  <ul>
+                    <i class="fa-brands fa-js"></i>  JavaScript
+                  </ul>
+                  <ul>
+                    <i class="fa-brands fa-node"></i> Node.Js
+                  </ul>
+                  <ul>
+                    <i class="fa-brands fa-html5"></i> HTML 
+                  </ul>
+                  <ul>
+                    <i class="fa-brands fa-css3-alt"></i> CSS
+                  </ul>
+                  <ul>
+                    <i class="fa-brands fa-bootstrap"></i> Bootstrap
+                  </ul>
+                  <ul>
+                    <i class="fa-solid fa-c"></i> Programming
+                  </ul>
+                  <ul>
+                    <i class="fa-solid fa-database"></i> MongoDB, SQL
                   </ul>
                 </div>
               </div>
@@ -243,7 +270,7 @@
               <div class="certificate-names col-12 col-md-8 col-lg-7">
                 <div class="work-title col-12 col-md-8">
                   <p>JavaScript(Basic) in Hackerrank <a href="https://www.hackerrank.com/certificates/f043dfb506cb">click here to see</a></p>
-                  <p>Computer Networks <a href="#">click here to see</a></p>
+                  
                 </div>
               </div>
             </div>
@@ -288,35 +315,35 @@
       <div><hr></div>
 
       <div class="footer" id="footer">
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-2">
           <h4>Phone</h4>
           <i class="fa-solid fa-phone"> </i>
           9392347220
         </div>
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-4">
           <h4>Gmail</h4>
           <i class="fa-solid fa-envelope"> </i>
           narugondla.vishnu@gmail.com
         </div>
-        <div class="col-12 col-md-3">
-          <h4><i class="fa-solid fa-link"></i>Links</h4>
+        <div class="col-12 col-md-4">
+          <h4>Links</h4>
           <div class="col icons">
-            <a href="https://github.com/vishnu6960"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/vishnuvardhan-narugondla-a1b2b2271/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.hackerrank.com/profile/vishnu6960"><i class="fa-brands fa-hackerrank"></i></a>
-            <a href="https://www.instagram.com/_m_r__vicky/"><i class="fa-brands fa-instagram"></i></a>
+            <a class="col-6 " href="https://github.com/vishnu6960"><i class="fa-brands fa-github"> </i> github</a>
+            <a class="col-6 "href="https://www.linkedin.com/in/vishnuvardhan-narugondla-a1b2b2271/"><i class="fa-brands fa-linkedin"></i> linkedin</a>
+            <a class="col-6 "href="https://www.hackerrank.com/profile/vishnu6960"><i class="fa-brands fa-hackerrank"></i>  hackerrank</a>
+            <a class="col-6 "href="https://www.instagram.com/_m_r__vicky/"><i class="fa-brands fa-instagram"></i>  instagram</a>
           </div>
         </div>
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-2">
           <h4>Location</h4>
           <i class="fa-solid fa-location-dot"></i>
-          Tirupati
+          Banglore
         </div>
 
       </div>
       </div>
 
-
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top  <i class="fa-solid fa-up-long"></i></button>
       <script type="text/javascript" src="portfolio.js"></script>
     
 </body>

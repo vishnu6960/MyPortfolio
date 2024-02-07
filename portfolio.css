@@ -100,6 +100,7 @@
     #pTag{
         margin-left: 15%;
     }
+    
 }
 
 .resume-header, .project-header{
@@ -155,6 +156,7 @@ hr{
 .skills-title{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .skills-title > ul{
     /* display:; */
@@ -162,7 +164,16 @@ hr{
     font-size: 20px;
 }
 .skills-title > ul > i{
-    font-size: 30px;
+    font-size: 40px;
+}
+.skills-title > ul > img{
+    height: 40px;
+    width: 50px;
+}
+@media (max-width:440px){
+    .skills-title > ul{
+        width: 100%;
+    }
 }
 
 .project-demo{
@@ -182,10 +193,7 @@ hr{
     .gif{
         height: 200px;
     }
-    .skills-title > ul{
-        
-        width: 100%;
-    }
+    
 }
 .gif > img{
     border-radius: 5px;
@@ -205,15 +213,15 @@ hr{
     justify-content: space-between;
     /* background-color: rgb(225, 225, 218); */
     /* background-color:rgb(248,248,248) */
-    background-color: rgb(24, 49, 83, 1);
+    /* background-color: rgb(24, 49, 83, 1); */
 }
 .footer > div{
     text-align: center;
     color: white;
 }
-.footer > div > h4{
+.footer > div > h3{
     /* text-align: center; */
-    color: rgb(108, 115, 158);
+    color: rgb(209, 209, 245);
 }
 .icons{
     font-size: 20px;
@@ -258,6 +266,11 @@ a{
 p{
     font-size: 18px;
     font-style: italic;
+}
+#contact{
+    font-size: 35px;
+    text-align: center;
+    color: white;
 }
 #myBtn {
   display: none;

@@ -257,9 +257,9 @@ body{
     background-color: #edecec;
     font-family: Madefor,Helvetica Neue,Helvetica,Arial,メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
 }
-.dropdown-menu{
+/* .dropdown-menu{
     background-color: rgb(246, 246, 239);;
-}
+} */
 a{
     text-decoration: none;
 }

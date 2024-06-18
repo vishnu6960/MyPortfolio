@@ -50,7 +50,7 @@
 }
 .profile{
     display: flex;
-    /* flex-direction: row-reverse; */
+    /* flex-direction: row-reversex; */
     justify-content: center;
     /* align-items: end; */
 }

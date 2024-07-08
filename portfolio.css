@@ -208,6 +208,7 @@ hr{
 .footer{
     width: 100%;
     /* position: fixed; */
+    min-height: 150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

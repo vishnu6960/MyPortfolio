@@ -23,3 +23,23 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+$(document).ready(function () {
+  // Collapse the navbar after clicking a link
+  $('.navbar-nav>li>a').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+  });
+
+  // Smooth scrolling to sections
+  $('a.nav-link').on('click', function(event) {
+      if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+
+          $('html, body').animate({
+              scrollTop: $(hash).offset().top - $('.navbar').outerHeight()
+          }, 100, function(){
+              window.location.hash = hash - $('.navbar').outerHeight();
+          });
+      }
+  });
+});

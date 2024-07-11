@@ -177,7 +177,6 @@ hr{
 }
 
 .project-demo{
-    /* border: 1px solid black; */
     /* height: 250px; */
     display: flex;
     flex-wrap: wrap;

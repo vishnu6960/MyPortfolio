@@ -1,360 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="portfolio.css">
-    <script src="https://kit.fontawesome.com/accd26a21f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-gsJPAB4xi4E9c9jUcZnUgObY10UgXzJl8rUfrYYDZU5IYY5b3wPejqcvF2IzWlDO" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="portfolio.css">
+  <script src="https://kit.fontawesome.com/accd26a21f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha384-gsJPAB4xi4E9c9jUcZnUgObY10UgXzJl8rUfrYYDZU5IYY5b3wPejqcvF2IzWlDO" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
-    <title>Vishnu's Portfolio</title>
+  <title>Vishnu's Portfolio</title>
 </head>
+
 <body>
   <!-- <button onclick="Resume()">click here</button> -->
-    <nav class="navbar sticky-top navbar-dark navbar-expand-lg bg-dark">
-        <div class="container-fluid">
-          <div class="name_Div">
-            <a class="navbar-brand" href="index.html"><h3 style="color: white;">Vishnuvardhan</h3></a>
-            <p class=" fa-1x" id="pTag">Web Developer</p>
+  <nav class="navbar sticky-top navbar-dark navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <div class="name_Div">
+        <a class="navbar-brand" href="index.html">
+          <h3 style="color: white;">Vishnuvardhan</h3>
+        </a>
+        <p class=" fa-1x" id="pTag">Web Developer</p>
+      </div>
+
+      <!-- <span type="text" href="">Web Developer</span> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav" id="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#About">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" type="button" href="#Projects">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" type="button" onclick="Projects()" href="#Resume">RESUME</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PROFILE LINKS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" target="_blank" href="https://github.com/vishnu6960">GITHUB</a></li>
+              <li><a class="dropdown-item" target="_blank"
+                  href="https://www.hackerrank.com/profile/vishnu6960">HACKERRANK</a></li>
+              <li><a class="dropdown-item" target="_blank"
+                  href="https://www.linkedin.com/in/vishnuvardhan-narugondla-a1b2b2271/">LINKED IN</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container main col-12" id="main">
+    <div id="About" class="row col-sm-12">
+      <div class="profile col-12 col-md-6 col-lg-5 col-xl-4">
+        <div class="col-9 col-sm-8 col-md-12 col-lg-12 col-xl-11">
+          <img class="col-6" src="vishnu;s UpdatedPic.jpg" alt="">
+        </div>
+      </div>
+      <div class="about-text col-12 col-md-6 col-lg-6 ">
+        <div>
+          <h1>Hello</h1>
+        </div>
+        <div>
+          <p>I'm Vishnuvardhan, I recently graduated from the Department of Information Technology at SVCE, Tirupati</p>
+          <!-- <h5>Web Developer</h5> -->
+        </div>
+        <div>
+          <hr>
+        </div>
+        <div>
+          <h4>A Bit About Me</h4>
+        </div>
+        <div>
+          <p>I am a Web Developer with knowledge in HTML, CSS, JAVASCRIPT, Bootstrap, React.Js from Hyderabad, India.
+            I am very passionate about improving my coding skills & developing applications & websites.
+            I demonstrate a commitment to high-quality development through my GitHub repositories, showcasing a strong
+            dedication to crafting well-structured and efficient code.</p>
+        </div>
+      </div>
+      <div id="Projects">
+        <hr>
+      </div>
+    </div>
+    <div class="row project" id="Projects">
+      <div class="row project-header">
+        <div class="col-12">
+          <h1>Projects</h1>
+        </div>
+      </div>
+      <div class="row projects-div">
+        <div class="project-name col-12 col-md-6 col-lg-8">
+          <h3>Movie_Api</h3>
+
+          <p>This Website provides the movie posters and the information about the movie that we search for and also
+            provide similar movie posters according to the name we search "With Responsiveness"</p>
+          <p><strong>Tools used : </strong>JavaScript, Html, Css, Bootstrap, Rest_Api</p>
+
+        </div>
+        <div class="project-demo col-12 col-md-6 col-lg-4">
+          <div class="gif col-12">
+            <img src="movie_api2.gif" alt="">
           </div>
-          
-          <!-- <span type="text" href="">Web Developer</span> -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav" id="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#About">ABOUT</a>
-              </li>
-              <li class="nav-item">
-               <a class="nav-link" type="button" href="#Projects">PROJECTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" type="button" onclick="Projects()" href="#Resume">RESUME</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  PROFILE LINKS
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" target="_blank" href="https://github.com/vishnu6960">GITHUB</a></li>
-                  <li><a class="dropdown-item" target="_blank" href="https://www.hackerrank.com/profile/vishnu6960">HACKERRANK</a></li>
-                  <li><a class="dropdown-item" target="_blank" href="https://www.linkedin.com/in/vishnuvardhan-narugondla-a1b2b2271/">LINKED IN</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#footer">CONTACT</a>
-              </li>
+          <div id="view"><a href="https://vishnu6960.github.io/Get_Movie-details/"><button>click here to
+                view</button></a></div>
+        </div>
+      </div>
+      <div>
+        <hr>
+      </div>
+
+      <div class="row projects-div">
+        <div class="project-name col-12 col-md-6 col-lg-8">
+          <h3>Typing_Test</h3>
+
+          <p>This Website provides the typing capacity of a person for 1 min, it has easy level for beginners and also
+            provide the net speed, accuracy, incorrect letters count..(for desktops)</p>
+          <p><strong>Tools used : </strong>JavaScript, Html, Css</p>
+
+        </div>
+        <div class="project-demo col-12 col-md-6 col-lg-4">
+          <div class="gif col-12">
+            <img src="typingTest.gif" alt="">
+          </div>
+          <div id="view"><a href="https://vishnu6960.github.io/Typing-test/"><button>click here to view</button></a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <hr>
+      </div>
+
+      <div class="row projects-div">
+        <div class="project-name col-12 col-md-6 col-lg-8">
+          <h3>Currency_converter</h3>
+
+          <p>This webpage converts the one currency value to another currency value by using Api call.</p>
+          <p><strong>Tools used : </strong>JavaScript, Html, Css, Rest_Api</p>
+
+        </div>
+        <div class="project-demo col-12 col-md-6 col-lg-4">
+          <div class="gif col-12">
+            <img src="currencyConverter.gif" alt="">
+          </div>
+          <div id="view">
+            <a href="https://vishnu6960.github.io/Currency_converter/"><button>click here to view</button></a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <hr>
+      </div>
+
+      <div class="row projects-div">
+        <div class="project-name col-12 col-md-6 col-lg-8">
+          <h3>Food_Order_Page(static)</h3>
+          <p>This website is only a static food order webpage for view.</p>
+          <p><strong>Tools used : </strong>ReactJs, Html, Css, JavaScript, Bootstrap</p>
+
+        </div>
+        <div class="project-demo col-12 col-md-6 col-lg-4">
+          <div class="gif col-12">
+            <img src="React1.gif" alt="">
+          </div>
+          <div id="view">
+            <!-- <a href="#"><button>click here to view</button></a> -->
+          </div>
+        </div>
+      </div>
+      <!-- <div><hr></div> -->
+    </div>
+    <div id="Resume">
+      <hr>
+    </div>
+    <div class="row resume" id="Resume">
+      <div class="row resume-header">
+        <div class="col-6">
+          <h1>Resume</h1>
+        </div>
+        <div class="pdf col-6">
+          <a class="fa-fade"
+            href="https://drive.google.com/file/d/1PPjDyZK7KsjkKlBYL8u9qpVjA2oz8orc/view?usp=drivesdk"><button>PDF file
+              <i class="fa-solid fa-eye"></i></button></a>
+        </div>
+      </div>
+      <div class="row work-div">
+        <div class="work-header col-12 col-md-4 col-lg-5">
+          <h3>Work Experience</h3>
+        </div>
+        <div class="work-names col-12 col-md-8 col-lg-7">
+          <div class="work-year col-12 col-md-4">
+            <p>2022-2023</p>
+
+          </div>
+          <div class="work-title col-12 col-md-8">
+            <h6><strong>Web Development Trainee</strong></h6>
+            <p> The training consisted of HTML, CSS, Bootstrap, DBMS, PHP(basic), JS, React, and Final Project modules.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row education-div">
+        <div class="education-header col-12 col-md-4 col-lg-5">
+          <h2>Education</h2>
+        </div>
+        <div class="education-names col-12 col-md-8 col-lg-7">
+          <div class="education-year col-12 col-md-4">
+            <p>2020-2024</p>
+
+          </div>
+          <div class="education-title col-12 col-md-8">
+            <h5>Sri Venkateswara College of Engineering(SVCE), Tirupati</h5>
+            <p>Bachelor's Degree <span>(Information Technology)</span></p>
+          </div>
+        </div>
+        <div class="education-names col-12 col-md-8 col-lg-7">
+          <div class="education-year col-12 col-md-4">
+            <p>2018-2020</p>
+
+          </div>
+          <div class="education-title col-12 col-md-8">
+            <h5>Sir C.V Raman Junior College, Tadipatri</h5>
+            <p>Intermediate <span>(Maths, Physics, Chemistry)</span></p>
+          </div>
+        </div>
+        <div class="education-names col-12 col-md-8 col-lg-7">
+          <div class="education-year col-12 col-md-4">
+            <p>2017-2018</p>
+
+          </div>
+          <div class="education-title col-12 col-md-8">
+            <h5>Sri Sarada Vidya Mandir</h5>
+            <p>10th Standard</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row skills-div">
+        <div class="skills-header col-12 col-md-4 col-lg-5">
+          <h3>Skills & Expertise</h3>
+        </div>
+        <div class="skills-names col-12 col-md-8 col-lg-7">
+          <div class="skills-title col-12">
+            <ul>
+              <img
+                src="https://static-00.iconduck.com/assets.00/react-javascript-js-framework-facebook-icon-2048x1822-f7kq7hho.png"
+                alt=""> React.Js
+            </ul>
+            <ul>
+              <!-- <i class="fa-brands fa-js"></i> -->
+              <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt=""> JavaScript
+            </ul>
+            <ul>
+              <!-- <i class="fa-brands fa-node"></i> -->
+              <img style="height: 50px;" src="https://cdn-icons-png.flaticon.com/128/919/919825.png" alt=""> Node.Js
+            </ul>
+            <ul>
+              <!-- <i class="fa-brands fa-html5"></i> -->
+              <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" alt=""> HTML
+            </ul>
+            <ul>
+              <!-- <i class="fa-brands fa-css3-alt"></i> -->
+              <img style="width: 55px; height: 45px;"
+                src="https://diziglobalsolution.com/wp-content/uploads/2023/04/logo-css-3-1536.png" alt=""> CSS
+            </ul>
+            <ul>
+              <!-- <i class="fa-brands fa-bootstrap"></i> -->
+              <img style="width: 55px; height: 45px;"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/964px-Bootstrap_logo.svg.png"
+                alt=""> Bootstrap
+            </ul>
+            <ul>
+              <i class="fa-solid fa-c"></i> Programming
+            </ul>
+            <ul>
+              <!-- <i class="fa-solid fa-database"></i> -->
+              <img style="background-color:  #edecec;"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhu0LCnvNxmzBc5b0FF2Tc9ZQQTCpFx1ZBZOb4MZ39i6stCjhpjlH2rjtTU_EhX0wgED4&usqp=CAU"
+                alt=""> MongoDB
             </ul>
           </div>
         </div>
-      </nav>
+      </div>
+      <hr>
 
-      <div class="container main col-12" id="main">
-        <div id="About" class="row col-sm-12">
-          <div class="profile col-12 col-md-6 col-lg-5 col-xl-4">
-            <div class="col-9 col-sm-8 col-md-12 col-lg-12 col-xl-11">
-              <img class="col-6" src="vishnu;s UpdatedPic.jpg" alt="">
-            </div>
-          </div>
-          <div class="about-text col-12 col-md-6 col-lg-6 ">
-            <div>
-              <h1>Hello</h1>
-            </div>
-            <div>
-              <p>I'm Vishnuvardhan, I recently graduated from the Department of Information Technology at SVCE, Tirupati</p>
-              <!-- <h5>Web Developer</h5> -->
-            </div>
-            <div><hr></div>
-            <div>
-              <h4>A Bit About Me</h4>
-            </div>
-            <div>
-              <p>I am a Web Developer with knowledge in HTML, CSS, JAVASCRIPT, Bootstrap, React.Js from Hyderabad, India.
-                 I am very passionate about improving my coding skills & developing applications & websites.
-                 I demonstrate a commitment to high-quality development through my GitHub repositories, showcasing a strong dedication to crafting well-structured and efficient code.</p>
-            </div>
-          </div>
-          <div id="Projects"><hr></div>
+      <div class="row certificate-div">
+        <div class="certificate-header col-12 col-md-4 col-lg-5">
+          <h3>Certificates</h3>
         </div>
-        <div class="row project" id="Projects">
-          <div class="row project-header">
-            <div class="col-12">
-              <h1>Projects</h1>
-            </div>
-          </div>
-          <div class="row projects-div">
-            <div class="project-name col-12 col-md-6 col-lg-8">
-              <h3>Movie_Api</h3>
-              
-              <p>This Website provides the movie posters and the information about the movie that we search for and also provide similar movie posters according to the name we search "With Responsiveness"</p>
-                <p><strong>Tools used : </strong>JavaScript, Html, Css, Bootstrap, Rest_Api</p>
-                
-            </div>
-            <div class="project-demo col-12 col-md-6 col-lg-4">
-              <div class="gif col-12">
-                <img src="movie_api2.gif" alt="">
-              </div>
-              <div id="view"><a href="https://vishnu6960.github.io/Get_Movie-details/"><button>click here to view</button></a></div>
-            </div>
-          </div>
-          <div><hr></div>
-
-          <div class="row projects-div">
-            <div class="project-name col-12 col-md-6 col-lg-8">
-              <h3>Typing_Test</h3>
-              
-              <p>This Website provides the typing capacity of a person for 1 min, it has easy level for beginners and also provide the net speed, accuracy, incorrect letters count..(for desktops)</p>
-                <p><strong>Tools used : </strong>JavaScript, Html, Css</p>
-                
-            </div>
-            <div class="project-demo col-12 col-md-6 col-lg-4">
-              <div class="gif col-12">
-                <img src="typingTest.gif" alt="">
-              </div>
-              <div id="view"><a href="https://vishnu6960.github.io/Typing-test/"><button>click here to view</button></a></div>
-            </div>
-          </div>
-          <div><hr></div>
-
-          <div class="row projects-div">
-            <div class="project-name col-12 col-md-6 col-lg-8">
-              <h3>Currency_converter</h3>
-              
-              <p>This webpage converts the one currency value to another currency value by using Api call.</p>
-              <p><strong>Tools used : </strong>JavaScript, Html, Css, Rest_Api</p>
-                
-            </div>
-            <div class="project-demo col-12 col-md-6 col-lg-4">
-              <div class="gif col-12">
-                <img src="currencyConverter.gif" alt="">
-              </div>
-              <div id="view">
-                <a href="https://vishnu6960.github.io/Currency_converter/"><button>click here to view</button></a>
-              </div>
-            </div>
-          </div>
-          <div><hr></div>
-
-          <div class="row projects-div">
-            <div class="project-name col-12 col-md-6 col-lg-8">
-              <h3>Food_Order_Page(static)</h3>
-              <p>This website is only a static food order webpage for view.</p>
-              <p><strong>Tools used : </strong>ReactJs, Html, Css, JavaScript, Bootstrap</p>
-                
-            </div>
-            <div class="project-demo col-12 col-md-6 col-lg-4">
-              <div class="gif col-12">
-                <img src="React1.gif" alt="">
-              </div>
-              <div id="view">
-                <!-- <a href="#"><button>click here to view</button></a> -->
-              </div>
-            </div>
-          </div>
-          <!-- <div><hr></div> -->
-        </div>
-        <div id="Resume"><hr></div>
-           <div class="row resume" id="Resume">
-            <div class="row resume-header">
-              <div class="col-6">
-                <h1>Resume</h1>
-              </div>
-              <div class="pdf col-6">
-                <a class="fa-fade" href="https://drive.google.com/file/d/1TlCfRZlhwYSgjbuAeCjQhSvzjTowIPrQ/view?usp=drivesdk"><button>PDF file <i class="fa-solid fa-eye"></i></button></a>
-              </div>
-            </div>
-            <div class="row work-div">
-              <div class="work-header col-12 col-md-4 col-lg-5">
-                <h3>Work Experience</h3>
-              </div>
-              <div class="work-names col-12 col-md-8 col-lg-7">
-                <div class="work-year col-12 col-md-4">
-                  <p>2022-2023</p>
-
-                </div>
-                <div class="work-title col-12 col-md-8">
-                  <h6><strong>Web Development Trainee</strong></h6>
-                  <p> The training consisted of HTML, CSS, Bootstrap, DBMS, PHP(basic), JS, React, and Final Project modules. 
-                  </p>
-                </div>
-              </div>
-            </div>
-            <hr>
-
-            <div class="row education-div">
-              <div class="education-header col-12 col-md-4 col-lg-5">
-                <h2>Education</h2>
-              </div>
-              <div class="education-names col-12 col-md-8 col-lg-7">
-                <div class="education-year col-12 col-md-4">
-                  <p>2020-2024</p>
-
-                </div>
-                <div class="education-title col-12 col-md-8">
-                  <h5>Sri Venkateswara College of Engineering(SVCE), Tirupati</h5>
-                  <p>Bachelor's Degree <span>(Information Technology)</span></p>
-                </div>
-              </div>
-              <div class="education-names col-12 col-md-8 col-lg-7">
-                <div class="education-year col-12 col-md-4">
-                  <p>2018-2020</p>
-
-                </div>
-                <div class="education-title col-12 col-md-8">
-                  <h5>Sir C.V Raman Junior College, Tadipatri</h5>
-                  <p>Intermediate <span>(Maths, Physics, Chemistry)</span></p>
-                </div>
-              </div>
-              <div class="education-names col-12 col-md-8 col-lg-7">
-                <div class="education-year col-12 col-md-4">
-                  <p>2017-2018</p>
-
-                </div>
-                <div class="education-title col-12 col-md-8">
-                  <h5>Sri Sarada Vidya Mandir</h5>
-                  <p>10th Standard</p>
-                </div>
-              </div>
-            </div>
-            <hr>
-
-            <div class="row skills-div">
-              <div class="skills-header col-12 col-md-4 col-lg-5">
-                <h3>Skills & Expertise</h3>
-              </div>
-              <div class="skills-names col-12 col-md-8 col-lg-7">
-                <div class="skills-title col-12">
-                  <ul>
-                    <img src="https://static-00.iconduck.com/assets.00/react-javascript-js-framework-facebook-icon-2048x1822-f7kq7hho.png" alt=""> React.Js 
-                  </ul>
-                  <ul>
-                    <!-- <i class="fa-brands fa-js"></i> -->
-                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt=""> JavaScript
-                  </ul>
-                  <ul>
-                    <!-- <i class="fa-brands fa-node"></i> -->
-                    <img style="height: 50px;" src="https://cdn-icons-png.flaticon.com/128/919/919825.png" alt=""> Node.Js
-                  </ul>
-                  <ul>
-                    <!-- <i class="fa-brands fa-html5"></i> -->
-                    <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" alt=""> HTML 
-                  </ul>
-                  <ul>
-                    <!-- <i class="fa-brands fa-css3-alt"></i> -->
-                    <img style="width: 55px; height: 45px;" src="https://diziglobalsolution.com/wp-content/uploads/2023/04/logo-css-3-1536.png" alt=""> CSS
-                  </ul>
-                  <ul>
-                    <!-- <i class="fa-brands fa-bootstrap"></i> -->
-                    <img style="width: 55px; height: 45px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/964px-Bootstrap_logo.svg.png" alt=""> Bootstrap
-                  </ul>
-                  <ul>
-                    <i class="fa-solid fa-c"></i> Programming
-                  </ul>
-                  <ul>
-                    <!-- <i class="fa-solid fa-database"></i> -->
-                    <img style="background-color:  #edecec;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhu0LCnvNxmzBc5b0FF2Tc9ZQQTCpFx1ZBZOb4MZ39i6stCjhpjlH2rjtTU_EhX0wgED4&usqp=CAU" alt=""> MongoDB
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <hr>
-
-            <div class="row certificate-div">
-              <div class="certificate-header col-12 col-md-4 col-lg-5">
-                <h3>Certificates</h3>
-              </div>
-              <div class="certificate-names col-12 col-md-8 col-lg-7">
-                <div class="work-title col-12 col-md-8">
-                  <p>JavaScript(Basic) in Hackerrank <a href="https://www.hackerrank.com/certificates/f043dfb506cb">Click Here</a></p>
-                  <p>Certificate of Training on Web Developmet <a href="https://drive.google.com/file/d/1IsmWVDHRLlZmIzlOdqQ08D3JwRAmPg4C/view?usp=drivesdk">Click Here</a></p>
-                  <p>Certificate of one month internship in Web Development & Designing <a href="https://drive.google.com/file/d/1IpAXqcs8ufXZCiXnkrBgFoQNIWi85CWu/view?usp=drivesdk">Click Here</a></p>
-        
-                </div>
-              </div>
-            </div>
-            <div><hr></div>
+        <div class="certificate-names col-12 col-md-8 col-lg-7">
+          <div class="work-title col-12 col-md-8">
+            <p>JavaScript(Basic) in Hackerrank <a href="https://www.hackerrank.com/certificates/f043dfb506cb">Click
+                Here</a></p>
+            <p>Certificate of Training on Web Developmet <a
+                href="https://drive.google.com/file/d/1IsmWVDHRLlZmIzlOdqQ08D3JwRAmPg4C/view?usp=drivesdk">Click
+                Here</a></p>
+            <p>Certificate of one month internship in Web Development & Designing <a
+                href="https://drive.google.com/file/d/1IpAXqcs8ufXZCiXnkrBgFoQNIWi85CWu/view?usp=drivesdk">Click
+                Here</a></p>
 
           </div>
-
-          
-          <div class="row portfolios-div">
-            <div class="col-12 col-md-10 col-lg-6 github-div">
-              <div>
-                <h4>Github-Profile</h4>
-              </div>
-              <div class="github-pic">
-                <img src="github-pic.png" alt="">
-              </div>
-              <div>
-                <p></p>
-                <a href="https://github.com/vishnu6960"><button>View Profile</button></a>
-              </div>
-
-            </div>
-            <div class="col-12 col-md-10 col-lg-6 hackerrank-div">
-              <div>
-                <h4>Hackerrank-Profile</h4>
-              </div>
-              <div class="hackerrank-pic">
-                <img src="hackerrank-pic.png" alt="">
-              </div>
-              <div>
-                <p></p>
-                <a href="https://www.hackerrank.com/profile/vishnu6960"><button>View Profile</button></a>
-              </div>
-
-            </div>
-
-          </div>
-          <!-- <div><hr></div> -->
-          
         </div>
       </div>
-      <div><hr></div>
-      <div id="contact" class="bg-dark">Contact Me</div>
-      <div class="footer bg-dark" id="footer">
-        <div style="font-size: 20px;" class="col-12 col-md-6 col-lg-2">
-          <h3>Phone</h3>
-          <i class="fa-solid fa-phone fa-bounce"> </i>
-          9392347220
+      <div>
+        <hr>
+      </div>
+
+    </div>
+
+
+    <div class="row portfolios-div">
+      <div class="col-12 col-md-10 col-lg-6 github-div">
+        <div>
+          <h4>Github-Profile</h4>
         </div>
-        <div style="font-size: 20px;" class="col-12 col-md-6 col-lg-4">
-          <h3>Gmail</h3>
-          <i style="font-size: 25px;" class="fa-solid fa-envelope fa-flip"> </i>
-          narugondla.vishnu@gmail.com
+        <div class="github-pic">
+          <img src="github-pic.png" alt="">
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <h3>Links</h3>
-          <div class="col icons">
-            <a class="col-6 " href="https://github.com/vishnu6960"><i class="fa-brands fa-github"> </i> github</a>
-            <a class="col-6 "href="https://www.linkedin.com/in/vishnuvardhan-narugondla-a1b2b2271/"><i class="fa-brands fa-linkedin"></i> linkedin</a>
-            <a class="col-6 "href="https://www.hackerrank.com/profile/vishnu6960"><i class="fa-brands fa-hackerrank"></i>  hackerrank</a>
-            <a class="col-6 "href="https://www.instagram.com/_m_r__vicky/"><i class="fa-brands fa-instagram"></i>  instagram</a>
-          </div>
-        </div>
-        <div style="font-size: 19px;" class="col-12 col-md-6 col-lg-2">
-          <h3>Location</h3>
-          <i style="font-size: 25px;" class="fa-solid fa-location-dot fa-fade"></i>
-          Banglore
+        <div>
+          <p></p>
+          <a href="https://github.com/vishnu6960"><button>View Profile</button></a>
         </div>
 
       </div>
+      <div class="col-12 col-md-10 col-lg-6 hackerrank-div">
+        <div>
+          <h4>Hackerrank-Profile</h4>
+        </div>
+        <div class="hackerrank-pic">
+          <img src="hackerrank-pic.png" alt="">
+        </div>
+        <div>
+          <p></p>
+          <a href="https://www.hackerrank.com/profile/vishnu6960"><button>View Profile</button></a>
+        </div>
+
       </div>
 
-      <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top  <i class="fa-solid fa-up-long"></i></button> -->
-      <script type="text/javascript" src="portfolio.js"></script>
-      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+    </div>
+    <!-- <div><hr></div> -->
+
+  </div>
+  </div>
+  <div>
+    <hr>
+  </div>
+  <div id="contact" class="bg-dark">Contact Me</div>
+  <div class="footer bg-dark" id="footer">
+    <div style="font-size: 20px;" class="col-12 col-md-6 col-lg-2">
+      <h3>Phone</h3>
+      <i class="fa-solid fa-phone fa-bounce"> </i>
+      9392347220
+    </div>
+    <div style="font-size: 20px;" class="col-12 col-md-6 col-lg-4">
+      <h3>Gmail</h3>
+      <i style="font-size: 25px;" class="fa-solid fa-envelope fa-flip"> </i>
+      narugondla.vishnu@gmail.com
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <h3>Links</h3>
+      <div class="col icons">
+        <a class="col-6 " href="https://github.com/vishnu6960"><i class="fa-brands fa-github"> </i> github</a>
+        <a class="col-6 " href="https://www.linkedin.com/in/vishnuvardhan-narugondla-a1b2b2271/"><i
+            class="fa-brands fa-linkedin"></i> linkedin</a>
+        <a class="col-6 " href="https://www.hackerrank.com/profile/vishnu6960"><i class="fa-brands fa-hackerrank"></i>
+          hackerrank</a>
+        <a class="col-6 " href="https://www.instagram.com/_m_r__vicky/"><i class="fa-brands fa-instagram"></i>
+          instagram</a>
+      </div>
+    </div>
+    <div style="font-size: 19px;" class="col-12 col-md-6 col-lg-2">
+      <h3>Location</h3>
+      <i style="font-size: 25px;" class="fa-solid fa-location-dot fa-fade"></i>
+      Banglore
+    </div>
+
+  </div>
+  </div>
+
+  <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top  <i class="fa-solid fa-up-long"></i></button> -->
+  <script type="text/javascript" src="portfolio.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
